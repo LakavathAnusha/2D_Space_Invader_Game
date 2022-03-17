@@ -28,13 +28,13 @@ public class PlayerMovement : MonoBehaviour
         {
             transform.position = new Vector3(-7f, transform.position.y, 0);
         }
-        if (transform.position.x > 4f)
+        if (transform.position.y > 4f)
         {
-            transform.position = new Vector3(4f, transform.position.y, 0);
+            transform.position = new Vector3(transform.position.x,4f,0);
         }
-        else if (transform.position.x < -4f)
+        else if (transform.position.y < -4f)
         {
-            transform.position = new Vector3(-4f, transform.position.y, 0);
+            transform.position = new Vector3(transform.position.x,-4f,0);
         }
 
 
